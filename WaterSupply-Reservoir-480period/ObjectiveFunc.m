@@ -1,4 +1,14 @@
 function [x,Penalized_fit,fit]=ObjectiveFunc(x,Inflow,Demand,Loss)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  Charged System Search (CSS) Optimization Algorithm          %%%
+%%%  Objective Function code - Water-Supply Reservoir Operation  %%%
+%%%        https://www.mdpi.com/2306-5338/6/1/5                  %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Behzad Asadieh, Ph.D.           %%%
+%%% University of Pennsylvania      %%%
+%%% basadieh@sas.upenn.edu          %%%
+%%% github.com/behzadasd            %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Lower bounds
 x_min=0;
