@@ -1,3 +1,14 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  Charged System Search (CSS) Optimization Algorithm  %%%
+%%%               Main algorithm code                    %%%
+%%%        https://www.mdpi.com/2306-5338/6/1/5          %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Behzad Asadieh, Ph.D.           %%%
+%%% University of Pennsylvania      %%%
+%%% basadieh@sas.upenn.edu          %%%
+%%% github.com/behzadasd            %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 clc;
 clear;
 tic;
