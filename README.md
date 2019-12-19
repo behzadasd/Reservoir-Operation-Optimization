@@ -11,7 +11,8 @@ The CSS algorithm is a metaheuristic optimization method inspired by the governi
 
 # Water-Supply Reservoir Operation
 In a water-supply reservoir operation, the objective is to obtain a set of releases from the reservoir (or a set of reservoir storage volumes) for the operation period with given inflow such that a predefined pattern of demands is met. In the other words, the objective is to set the released flow as close as possible to the demand and decrease the unnecessary overflows from the reservoirs, and hence, minimize the water deficit.
-       Minimize F = ∑(t=1 to NT) [ (D(t)−R(t)) / Dmax)^2 ]
+       Minimize F = ∑(t=1 to NT) [ (D(t)−R(t)) / Dmax)^2 ].
+
 
 Subject to continuity equations at each time step:
 
