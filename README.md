@@ -17,6 +17,7 @@ In a water-supply reservoir operation, the objective is to obtain a set of relea
 
 Subject to continuity equations at each time step:
 
+
 S(t+1)=S(t)+I(t)−R(t)−Loss(t)
 
 Smin≤S(t)≤Smax
@@ -33,6 +34,29 @@ where NT is the number of time steps, D(t) is water demand in time step t in mil
 # Hydropower Reservoir Operation
 In a hydropower reservoir operation, the objective is to obtain a set of releases from the reservoir (or a set of reservoir storage volumes) such that the power generation from the reservoir is maximum, or as close as possible to the installed capacity of the hydro-electric plant.
 
+
+       Minimize F = ∑(t=1 to NT) [ 1 - (p(t) / power) ]
+
+
+Subject to continuity equations at each time step as described in the water supply operation. Here p (t) is power generated in megawatts (MW) in time step t, power is the installed capacity of hydro-electric plant (MW), and other parameters are defined as before. The power generated in time step t can be stated as follow:
+
+
+       p(t) = min[ (g×η×r(t)/PF) × (h(t)/1000) , power ]
+
+
+in which h(t) is the effective head of the hydroelectric plant as defined by Equation below:
+
+
+       h(t) = ( (H(t)+H(t+1)) / 2) − TWL
+
+
+H(t) is the elevation of water in reservoir at time step t which may be defined as a function of storage in the reservoir as:
+
+
+       H(t) = a+b×S(t)+c×S(t)^2+d×S(t)^3
+
+
+where g is the Earth’s gravity acceleration, η is the efficiency of the hydroelectric plant, r (t) is release from reservoir (m3/s), PF is the plant factor, TWL (tail water level) is the downstream elevation of the hydroelectric plant (m), a, b, c and d are constants that can be obtained by fitting the H(t) Equation to the reservoir’s data.
 
 
 # The "Dez" Reservoir
