@@ -11,16 +11,22 @@ The CSS algorithm is a metaheuristic optimization method inspired by the governi
 
 # Water-Supply Reservoir Operation
 In a water-supply reservoir operation, the objective is to obtain a set of releases from the reservoir (or a set of reservoir storage volumes) for the operation period with given inflow such that a predefined pattern of demands is met. In the other words, the objective is to set the released flow as close as possible to the demand and decrease the unnecessary overflows from the reservoirs, and hence, minimize the water deficit.
-       Minimize F = ∑(t=1 to NT) [ (D(t)−R(t)) / Dmax)^2 ].
+
+       Minimize F = ∑(t=1 to NT) [ (D(t)−R(t)) / Dmax)^2 ]
 
 
 Subject to continuity equations at each time step:
 
 S(t+1)=S(t)+I(t)−R(t)−Loss(t)
+
 Smin≤S(t)≤Smax
+
 Rmin≤R(t)≤Rmax
+
 Loss(t)=Ev(t)×A(t)/1000
+
 A(t)=x0+x1×S(t)+x2×S(t)^2+x3×S(t)^3
+
 
 where NT is the number of time steps, D(t) is water demand in time step t in million cubic meters (MCM), R(t) is release from the reservoir in time step t (MCM), Dmax is maximum demand (MCM), S(t) is storage at the start of time step t (MCM), I (t) is inflow in time step t (MCM), Smin and Smax are minimum and maximum storage of reservoir (MCM), respectively and Rmin and Rmax are minimum and maximum allowed release from reservoir (MCM), respectively. Loss (t) is net amount of gain and loss of the reservoir resulting from precipitation and evaporation in time step t. Ev(t) is the evaporation height during the time step t, and x0, x1, x2 and x3 are constants that can be obtained by fitting the A(t) Equation to the existing data.
 
