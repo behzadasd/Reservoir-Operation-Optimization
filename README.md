@@ -12,7 +12,7 @@ The CSS algorithm is a metaheuristic optimization method inspired by the governi
 # Water-Supply Reservoir Operation
 In a water-supply reservoir operation, the objective is to obtain a set of releases from the reservoir (or a set of reservoir storage volumes) for the operation period with given inflow such that a predefined pattern of demands is met. In the other words, the objective is to set the released flow as close as possible to the demand and decrease the unnecessary overflows from the reservoirs, and hence, minimize the water deficit.
 
-       Minimize F = ∑(_t=1 to NT_) [ (D(t)−R(t)) / Dmax)^2 ]
+       Minimize F = ∑_t=1_to_NT [ (D(t)−R(t)) / Dmax)^2 ]
 
 
 Subject to continuity equations at each time step:
@@ -35,7 +35,7 @@ where NT is the number of time steps, D(t) is water demand in time step t in mil
 In a hydropower reservoir operation, the objective is to obtain a set of releases from the reservoir (or a set of reservoir storage volumes) such that the power generation from the reservoir is maximum, or as close as possible to the installed capacity of the hydro-electric plant.
 
 
-       Minimize F = ∑(t=1 to NT) [ 1 - (p(t) / power) ]
+       Minimize F = ∑_t=1_to_NT [ 1 - (p(t) / power) ]
 
 
 Subject to continuity equations at each time step as described in the water supply operation. Here p (t) is power generated in megawatts (MW) in time step t, power is the installed capacity of hydro-electric plant (MW), and other parameters are defined as before. The power generated in time step t can be stated as follow:
