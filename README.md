@@ -62,3 +62,13 @@ where g is the Earth’s gravity acceleration, η is the efficiency of the hydro
 # The "Dez" Reservoir
 
 Total storage capacity of “Dez” reservoir in pre-defined normal water level is 2510 MCM and the average inflow of the reservoir over 40 years period from 1970–2010 is 5900 MCM. The initial storage of the reservoir is taken equal to 1430 MCM. The maximum and minimum allowable storage volumes are set equal to 3340 and 830 MCM, respectively. The maximum and minimum monthly water release set equal to 1000 MCM and zero, respectively. The total installed capacity of hydroelectric power plant of the Dez reservoir is 650 MW, being operated with plant factor of 0.417 and 90% efficiency. The tail water level in downstream is assumed constant at 172 m above sea level.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+# Algorithm results from the main publication:
+
+Figure 4: Best solution yielded by the CSS algorithm for 60-month water-supply operation considering evaporation losses: water demand versus release from the reservoir (a), and river inflow versus storage volume at each time step (b). As seen from the figure, the storage is confined between maximum (S_max) and minimum (S_min) allowable storage.
+![Alt text](https://raw.githubusercontent.com/behzadasd/Reservoir-Operation-Optimization/master/Figure4.png)
+
+Figure 5: Convergence curve of the optimum solution obtained by the CSS algorithm for “Dez” reservoir water-supply and hydropower operation, considering evaporation losses, over 60 (a), 240 (b) and 480 (c) months periods.
+![Alt text](https://raw.githubusercontent.com/behzadasd/Reservoir-Operation-Optimization/master/Figure5.png)
+
